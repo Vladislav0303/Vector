@@ -39,7 +39,13 @@ public class Main {
     Delete_Element(el3, mass);
     sc.nextLine();
     System.out.println(Arrays.toString(mass));
-    System.out.println("capasity: " + mass.length);
+    int count = 0;
+        for (int i = 0; i < mass.length; i++) {
+            if(mass[i] != 0) {
+                count++;
+            }
+        }
+        System.out.println("capasity: " + count);
     System.out.println("size: " + mass.length);
     System.out.println("Хочете видалити весь масив?: ");
     if(sc.nextLine().equals("Так")) {
