@@ -17,9 +17,9 @@ public class MyVector {
                 sc.nextLine();
                 mass[i] = el;
                 i++;
-                get();
             }
     }
+        get();
         System.out.println("Введіть число яке хочете додати в кінець масиву: ");
         int el = sc.nextInt();
         Add_Element_In_End(el);
